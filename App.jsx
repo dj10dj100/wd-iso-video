@@ -22,7 +22,7 @@ Nav = React.createClass({
 Footer = React.createClass({
         render() {
             return (<div className="container-fluid footer">
-                        &copy;2016 website incorporated.
+                        &copy;2016 <a href="http://daniel-jenkins.com"> Daniel Jenkins </a>
                     </div>                
                     )}
             })
@@ -42,6 +42,16 @@ Video = React.createClass({
                         <div className="col-xs-12 embed-responsive embed-responsive-16by9">
                             <video controls className="embed-responsive-item" src={this.data.info[0]['url']} poster={this.data.info[0].poster} type="video/mp4"></video>
                         </div>
+                            <div>
+                                <nav>
+                                    <ul className="pagination pagination-sm">
+                                        <li><Link to="/1">1</Link></li>
+                                        <li><Link to="/2">2</Link></li>
+                                        <li><Link to="/3">3</Link></li>
+                                        <li><Link to="/4">4</Link></li>
+                                    </ul>
+                                </nav>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +110,7 @@ CommentsHolder = React.createClass({
     },
     render() {
         return (
-            <div className="col-xs-12" >
+            <div className="container" >
                 {this.data.info.map((data) => {
                     return <Comment key={data._id} name={data.name} comment={data.comment} time={data.createdAt}/>;
                 })}
