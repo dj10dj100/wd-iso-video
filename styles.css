@@ -1,1 +1,61 @@
 /* CSS declarations go here */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+
+body {
+	font-family: 'Droid Sans', sans-serif;
+}
+.container{
+	max-width:740px;
+}
+.video-wrap{
+	background: url(/images/swirl_pattern.png);
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.comments{
+	height:50px;
+	line-height:50px;
+	text-transform: italic;
+}
+.comment{
+	min-height: 125px;
+	border-bottom:1px solid #f4f4f4;
+	background:#fcfcfc;
+}
+.time{
+    border-radius: 40px;
+    border:3px solid #2bb531;
+    width:80px;
+    height:80px;
+    margin-top:20px;
+    background-color:#84CA84;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.time .glyphicon{
+	margin-top:15px;
+}
+.navbar{
+	margin-bottom:0;
+}
+textarea{
+	margin-top:20px;
+	min-height:200px;
+	margin-bottom:20px;
+	clear:both;
+}
+button{
+	display:block;
+	margin-top:20px;
+}
+.footer{
+	background:#fcfcfc;
+	border-top:1px solid #f2f2f2;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-style: italic;
+	margin-top:20px;
+	min-height:175px;
+}
